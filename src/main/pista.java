@@ -5,9 +5,24 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 class pista {
+    private int Comprimento_pista ;
 
-private final Lock queueLock = new ReentrantLock();
-public void  correr(){
+    public int getComprimento_pista() {
+        return this.Comprimento_pista;
+    }
+
+    public void setComprimento_pista(int comprimento_pista) {
+        if ( comprimento_pista>99 ) {
+            this.Comprimento_pista = comprimento_pista;
+        }
+}
+    public void pista(int Comprimento_pista)
+    {
+        this.Comprimento_pista=Comprimento_pista;
+    }
+    //private final Lock queueLock = new ReentrantLock();
+}
+/*public void  correr(){
         queueLock.lock();
         try {
         Long duration = (long) (Math.random() * 10000);
@@ -24,3 +39,4 @@ public void  correr(){
     }
 }
 }
+*/

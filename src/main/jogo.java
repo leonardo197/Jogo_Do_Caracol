@@ -6,10 +6,11 @@ public class jogo {
 
     public static void main(String[] args) {
         //variavel
-        int id,id_menu,N_Participantes=0,Comprimento=0,Aposta=0;
+        int id,id_menu,N_Participantes=0,Comprimento_pista=0,Aposta=0;
         String Nome=null,Opcoes;
         Scanner teclado = new Scanner(System.in);
         //varivel como obegeto
+        pista percurso=new pista();
 
         //menu
 
@@ -21,7 +22,6 @@ public class jogo {
         }
 
 
-
        do {
             System.out.print("2________________Numero de participantes: ");
             N_Participantes = teclado.nextInt();
@@ -29,9 +29,9 @@ public class jogo {
 
        do {
     System.out.print("3________________Comprimento da pista: ");
-    Comprimento = teclado.nextInt();
-      }while (Comprimento<100);
-
+    Comprimento_pista = teclado.nextInt();
+      }while (Comprimento_pista<100);
+        percurso.setComprimento_pista(Comprimento_pista);//adisiona o Comprimento pista
 
        do {
            System.out.print("4________________Ver características dos caracois? sim[s] nao[n] ");
@@ -40,17 +40,30 @@ public class jogo {
            {
                características();
            }
-       }while (Opcoes!="s"&&Opcoes!="n");
+       }while (Opcoes=="s"||Opcoes=="n");
 
 
        do {
            System.out.print("5________________Apostar Em coal dos "+N_Participantes+ " caracois: ");
            Aposta = teclado.nextInt();
            System.out.println();
-       }while (Aposta!=0);
+       }while (Aposta<0);
 
 
 
+        Thread thread[] = new Thread[N_Participantes];
+        caracol caracols[]=new caracol[N_Participantes];
+
+        for (int i = 0; i < N_Participantes; i++) {
+            thread[i] = new Thread(new caracol(percurso,i),
+                    "" + i);
+        }
+        for (int i = 0; i < N_Participantes; i++) {
+            thread[i].start();
+        }
+        /*for (int i = 0; i < N_Participantes; i++) {
+            thread[i].join();
+        }*/
 
 
 
