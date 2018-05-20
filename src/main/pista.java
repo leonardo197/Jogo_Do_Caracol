@@ -6,6 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class pista {
     private int Comprimento_pista ;
+    int ranque[] = new int[3];
 
     public int getComprimento_pista() {
         return this.Comprimento_pista;
@@ -16,27 +17,15 @@ class pista {
             this.Comprimento_pista = comprimento_pista;
         }
 }
-    public void pista(int Comprimento_pista)
+    public void pista()
+    {
+
+    }
+    public void pista(int Comprimento_pista, int candidatos)
     {
         this.Comprimento_pista=Comprimento_pista;
+         int ranque[] = new int[candidatos];
     }
-    //private final Lock queueLock = new ReentrantLock();
+
+
 }
-/*public void  correr(){
-        queueLock.lock();
-        try {
-        Long duration = (long) (Math.random() * 10000);
-        System.out.println(Thread.currentThread().getName()
-                + ": Fila de impressão: imprimindo um trabalho durante " + (duration / 1000)
-                + " segundos :: Tempo - " + new Date());
-        Thread.sleep(duration);
-    } catch (InterruptedException e) {
-        e.printStackTrace();
-    } finally {
-        System.out.println(Thread.currentThread().getName()
-                + ": O documento foi impresso");
-        queueLock.unlock();
-    }
-}
-}
-*/

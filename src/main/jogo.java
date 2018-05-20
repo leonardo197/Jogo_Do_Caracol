@@ -2,17 +2,20 @@ package main;
 
 import java.util.Scanner;
 
+
+
 public class jogo {
 
     public static void main(String[] args) {
-        //variavel
-        int id,id_menu,N_Participantes=0,Comprimento_pista=0,Aposta=0;
-        String Nome=null,Opcoes;
-        Scanner teclado = new Scanner(System.in);
-        //varivel como obegeto
-        pista percurso=new pista();
 
-        //menu
+         int id,id_menu,N_Participantes=0,Comprimento_pista=0,Aposta=0;
+          String Nome=null,Opcoes;
+          Scanner teclado = new Scanner(System.in);
+        //varivel como obegeto
+          pista percurso=new pista();
+         ranque ranque=new ranque();
+         //menu
+
 
         System.out.println("                 Menu inicial");
         System.out.println();
@@ -25,7 +28,7 @@ public class jogo {
        do {
             System.out.print("2________________Numero de participantes: ");
             N_Participantes = teclado.nextInt();
-        }while (N_Participantes<3);
+        }while (N_Participantes<3&&N_Participantes>100);
 
        do {
     System.out.print("3________________Comprimento da pista: ");
@@ -55,15 +58,19 @@ public class jogo {
         caracol caracols[]=new caracol[N_Participantes];
 
         for (int i = 0; i < N_Participantes; i++) {
-            thread[i] = new Thread(new caracol(percurso,i),
+            thread[i] = new Thread(new caracol(percurso,i,ranque),
                     "" + i);
         }
         for (int i = 0; i < N_Participantes; i++) {
             thread[i].start();
         }
-        /*for (int i = 0; i < N_Participantes; i++) {
-            thread[i].join();
-        }*/
+        ranque.listar();
+        for (int i = 0; i < N_Participantes; i++) {
+            try {
+                thread[i].join();
+            }catch (InterruptedException ex){}
+        }
+        ranque.listar();
 
 
 
