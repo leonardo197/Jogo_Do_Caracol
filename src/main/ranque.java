@@ -5,10 +5,12 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ranque {
     public int numero_caracol;
     int[] ranque = new int[100];
-    int posicao=0;
+    int posicao = 0;
     private final Lock queueLock = new ReentrantLock();
 
-    public void ra
+    public void ranque(){
+
+    }
     public void adicionar(int numero_caracol) {
         queueLock.lock();
         for (int i = 0; i < ranque.length; i++) {

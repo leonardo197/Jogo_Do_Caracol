@@ -8,13 +8,18 @@ public class jogo {
 
     public static void main(String[] args) {
 
+
+
          int id,id_menu,N_Participantes=0,Comprimento_pista=0,Aposta=0;
           String Nome=null,Opcoes;
           Scanner teclado = new Scanner(System.in);
         //varivel como obegeto
           pista percurso=new pista();
          ranque ranque=new ranque();
+        grafica menu= new grafica();
          //menu
+       id=1;
+        menu.retangulo(5,5,15,15);
 
 
         System.out.println("                 Menu inicial");
