@@ -18,54 +18,60 @@ public class jogo {
          ranque ranque=new ranque();
         grafica menu= new grafica();
          //menu
-       id=1;
-        menu.retangulo(5,5,15,15);
 
 
-        System.out.println("                 Menu inicial");
-        System.out.println();
+        menu.menu_inicial();
         while (Nome==null) {
-            System.out.print("1________________Nome: ");
             Nome = teclado.next().toString();
+            if (Nome==null){
+                System.out.print("                                   ║               O Seu Nome senhor(a): ");
+            }
         }
 
-
-       do {
-            System.out.print("2________________Numero de participantes: ");
-            N_Participantes = teclado.nextInt();
-        }while (N_Participantes<3&&N_Participantes>100);
-
-       do {
-    System.out.print("3________________Comprimento da pista: ");
-    Comprimento_pista = teclado.nextInt();
+        //--------------------------------------------------------participantes
+        menu.menu_participantes();
+        do {
+           N_Participantes = teclado.nextInt();
+           if (N_Participantes<3||N_Participantes>100){
+               System.out.print("                                   ║               O Numero de participantes : ");
+           }
+        }while (N_Participantes<3||N_Participantes>100);
+       //--------------------------------------------------------pista
+        menu.menu_pista();
+        do{
+         Comprimento_pista = teclado.nextInt();
+    if (Comprimento_pista<100){
+        System.out.print("                                   ║               O Numero De Metros : ");
+    }
       }while (Comprimento_pista<100);
         percurso.setComprimento_pista(Comprimento_pista);//adisiona o Comprimento pista
 
-       do {
-           System.out.print("4________________Ver características dos caracois? sim[s] nao[n] ");
-           Opcoes = teclado.next().toString();
-           if (Opcoes.equals("s"))
-           {
-               características();
-           }
-       }while (Opcoes=="s"||Opcoes=="n");
 
-
-       do {
-           System.out.print("5________________Apostar Em coal dos "+N_Participantes+ " caracois: ");
-           Aposta = teclado.nextInt();
-           System.out.println();
-       }while (Aposta<0);
-
-
-
+        ///-----------------------enisialisacao dos objetos
         Thread thread[] = new Thread[N_Participantes];
         caracol caracols[]=new caracol[N_Participantes];
 
-        for (int i = 0; i < N_Participantes; i++) {
-            thread[i] = new Thread(new caracol(percurso,i,ranque),
-                    "" + i);
+        //---------------------------apostar
+        menu.menu_características();
+
+        Opcoes = teclado.next().toString();
+        if (Opcoes.equals("s"))
+        {
+            menu.menu_características_sim();
+            Opcoes = teclado.next().toString();
+            if (Opcoes.equals("s"))
+            {//int numero_caracol,int velocidade,int tempo_descanso,int unidades_descanso,int tempo_de_movimento,int descanso
+              //menu.características_caracois(caracols[N_Participantes].getNumero_caracol);
+            }
         }
+
+
+
+
+        for (int i = 0; i < N_Participantes; i++) {
+            thread[i] = new Thread(new caracol(percurso,i,ranque),"" + i);//------****como por o arry de  objetos nas Threads
+        }
+
         for (int i = 0; i < N_Participantes; i++) {
             thread[i].start();
         }
@@ -97,16 +103,7 @@ public class jogo {
     }
     public static void características ()
     {
-        Scanner teclado = new Scanner(System.in);
-        int m;
-        System.out.println("                 Características");
-        System.out.println();
-        System.out.println("1________________Velocidade");
-        System.out.println("2________________Pausa para descanso");
-        System.out.println("3________________Unidades de corrida ate o descanso");
-        System.out.println();
-        System.out.print("Opeçao:  ");
-        m = teclado.nextInt();
+
 
     }
 }

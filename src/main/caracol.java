@@ -30,6 +30,15 @@ class caracol extends Thread {
     public int getVelocidade() {
         return velocidade;
     }
+    public int getNumero_caracol() {
+        return numero_caracol;
+    }
+    public int getDescanso() {
+        return descanso;
+    }
+    public int getTempo_de_movimento() {
+        return tempo_de_movimento;
+    }
 
 
     public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque)
