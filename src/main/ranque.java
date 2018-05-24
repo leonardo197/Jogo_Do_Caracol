@@ -3,9 +3,9 @@ import java.util.Date;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 public class ranque {
-    public int numero_caracol;
-    int[] ranque = new int[100];
-    int posicao = 0;
+    private int numero_caracol;
+    private int[] ranque = new int[50];
+    private int posicao = 0;
     private final Lock queueLock = new ReentrantLock();
 
     public void ranque(){
@@ -23,10 +23,9 @@ public class ranque {
     }
     public void listar() {
         queueLock.lock();
-            for (int s : ranque) {
+            for (int s = 0; s < posicao; s++) {
                 System.out.println(s);
             }
         queueLock.unlock();
-
     }
 }
