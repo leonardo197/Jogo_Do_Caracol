@@ -56,8 +56,8 @@ public class grafica {
         fim();
         System.out.println();
         System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╗");
-        System.out.println("                                   ║ Velocidade ║   Tempo Para    ║ contos metros ║  tempo para  ║");
-        System.out.println("                                   ║  Descanso  ║ para o descanso ║ um movimento  ║ um movimento ║");
+        System.out.println("                                   ║ Velocidade ║     Tempo De    ║ Quantos Metros║  Tempo Por   ║");
+        System.out.println("                                   ║            ║     Descanso    ║ Um Movimento  ║   movimento  ║");
         System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╝");
 
 

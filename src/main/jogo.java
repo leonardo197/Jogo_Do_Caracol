@@ -53,7 +53,7 @@ public class jogo {
         //---------------------------apostar
         menu.menu_características();
         for (int i = 0; i < N_Participantes; i++) {
-            thread[i] = new Thread(new caracol(percurso, i, ranque,atributos), "" + i+1);//------****como por o arry de  objetos nas Threads
+            thread[i] = new Thread(new caracol(percurso, i, ranque,atributos), "" + (i+1));//------****como por o arry de  objetos nas Threads
         }
         Opcoes = teclado.next().toString();
         if (Opcoes.equals("s")) {
