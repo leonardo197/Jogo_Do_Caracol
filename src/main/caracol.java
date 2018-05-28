@@ -52,7 +52,7 @@ class caracol extends Thread {
         this.distancia_pista=Comprimento_pista.getComprimento_pista();
         this.ranque=ranque;
         this.atributos=atributos;
-        atributos.adicionar(numero_caracol, velocidade, tempo_descanso, unidades_descanso, tempo_de_movimento);
+        atributos.adicionar_inicial(numero_caracol, velocidade, tempo_descanso, unidades_descanso, tempo_de_movimento, descanso);
     }
     //------------------------cod
 
@@ -91,6 +91,8 @@ class caracol extends Thread {
         }
         queueLock.unlock();
         guarda_posicao();
+        atributos.adicionar_final(numero_caracol, total_movimentos, distancia_percorrida, ranque.procurar_ranque(numero_caracol));
+
         //ranque.listar();
     }
 

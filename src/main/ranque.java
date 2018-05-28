@@ -1,8 +1,7 @@
 package main;
-import java.util.Date;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+
 public class ranque {
+    grafica grafica= new grafica();
     int [] ranque = new int[50];
     int count = 0;
     public void adicionar(int nome){
@@ -16,4 +15,19 @@ public class ranque {
             System.out.println(ranque[i]);
         }
     }
+    public void listar_3(){
+        grafica.podio_3(ranque[0],ranque[1],ranque[2]);
+    }
+    public int procurar_ranque(int numero){
+        int p=0;
+        for (int i = 0; i < 50; i++) {
+            if (ranque[i]==numero){
+                p= ranque[i];
+                break;
+            }
+        }
+        return p;
+
+    }
+
 }

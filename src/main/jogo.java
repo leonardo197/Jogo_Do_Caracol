@@ -48,7 +48,7 @@ public class jogo {
 
         ///-----------------------enisialisacao dos objetos
         Thread thread[] = new Thread[N_Participantes];
-        caracol caracols[] = new caracol[N_Participantes];
+       // caracol caracols[] = new caracol[N_Participantes];
 
         //---------------------------apostar
         menu.menu_características();
@@ -61,7 +61,7 @@ public class jogo {
             Opcoes = teclado.next().toString();
             if (Opcoes.equals("s")) {
                 menu.fim();
-                atributos.listar();
+                atributos.listar_inicial();
 
 
             }
@@ -82,6 +82,8 @@ public class jogo {
             }
         }
 
+        ranque.listar_3();
+        atributos.listar_final();
         ranque.listar();
 
 
