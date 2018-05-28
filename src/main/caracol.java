@@ -45,8 +45,8 @@ class caracol extends Thread {
     public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque,atributos atributos)
     {
         this.numero_caracol=numero_caracol;
-        this.velocidade=gerador.nextInt(5)+1;
-        this.tempo_descanso=gerador.nextInt(5)+1;
+        this.velocidade=gerador.nextInt(1)+10;
+        this.tempo_descanso=gerador.nextInt(250)+1;
         this.tempo_de_movimento=gerador.nextInt(250)+350;
         this.unidades_descanso=gerador.nextInt(7)+10;
         this.distancia_pista=Comprimento_pista.getComprimento_pista();
@@ -71,9 +71,9 @@ class caracol extends Thread {
 
         }
     }
-    public void gorda_posiçao() {
+    public void guarda_posicao() {
         synchronized (ranque) {
-            ranque.adicionar(numero_caracol);
+            ranque.adicionar(this.numero_caracol);
         }
     }
 
@@ -90,8 +90,8 @@ class caracol extends Thread {
             System.out.println(this.distancia_percorrida+"m caracol "+this.numero_caracol+ " total "+this.distancia_pista);
         }
         queueLock.unlock();
-        gorda_posiçao();
-        ranque.listar();
+        guarda_posicao();
+        //ranque.listar();
     }
 
 

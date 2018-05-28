@@ -75,4 +75,26 @@ public class grafica {
 
 
     }
+    public void podio(){
+        System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Apresentar                      ║ ");
+        System.out.println("                                   ║      Os Grandes Vencedores                                            ║ ");
+        fim();
+        System.out.println();
+        System.out.println();
+        System.out.println("                                                ╔══════════════╗   ");
+        System.out.println("                                                ║             ║   ");
+        System.out.println("                                                ║     #1      ║   ");
+        System.out.println("                                                ║             ╠══════════════╗   ");
+        System.out.println("                                                ║             ║             ║ ");
+        System.out.println("                                                ║             ║     #2      ║");
+        System.out.println("                                                ║             ║             ╠══════════════╗   ");
+        System.out.println("                                                ║             ║             ║             ║ ");
+        System.out.println("                                                ║             ║             ║     #3      ║");
+        System.out.println("                                                ║             ║             ║             ║ ");
+        System.out.println("                                                ╚══════════════╩═══════════════╩═══════════════╝");
+
+
+    }
 }
