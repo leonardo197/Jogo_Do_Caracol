@@ -2,14 +2,17 @@ package main;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 public class atributos {
-    private int[] ranque = new int[50];
-    private int[] descanso = new int[50];
-    private int[] velocidade = new int[50];
-    private int[] tempo_descanso = new int[50];
-    private int[] total_movimentos = new int[50];
-    private int[] unidades_descanso = new int[50];
-    private int[] tempo_de_movimento = new int[50];
-    private int[] distancia_percorrida = new int[50];
+    private int index=100;
+
+    private long[] tenpo=new long[index];
+    private int[] ranque = new int[index];
+    private int[] descanso = new int[index];
+    private int[] velocidade = new int[index];
+    private int[] tempo_descanso = new int[index];
+    private int[] total_movimentos = new int[index];
+    private int[] unidades_descanso = new int[index];
+    private int[] tempo_de_movimento = new int[index];
+    private int[] distancia_percorrida = new int[index];
 
 
     private final Lock queueLock = new ReentrantLock();
@@ -31,12 +34,13 @@ public class atributos {
         cont += 1;
         queueLock.unlock();
     }
-    public void adicionar_final(int numero_caracol, int total_movimentos,int distancia_percorrida,int ranque) {
+    public void adicionar_final(int numero_caracol, int total_movimentos,int distancia_percorrida,int ranque,long tenpo) {
         queueLock.lock();
 
         this.ranque[numero_caracol]=ranque;
         this.total_movimentos[numero_caracol] = total_movimentos;
         this.distancia_percorrida[numero_caracol] = distancia_percorrida;
+        this.tenpo[numero_caracol]=tenpo;
         cont += 1;
         queueLock.unlock();
     }
@@ -53,7 +57,7 @@ public class atributos {
         queueLock.lock();
         grafica.titolo_final();
         for (int i = 0; i < cont/2; i++) {
-            grafica.características_caracois_final(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i],total_movimentos[i],distancia_percorrida[i],ranque[i]);
+            grafica.características_caracois_final(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i],total_movimentos[i],distancia_percorrida[i],ranque[i],tenpo[i]);
         }
         queueLock.unlock();
     }

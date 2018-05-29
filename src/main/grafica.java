@@ -74,10 +74,10 @@ public class grafica {
         System.out.println("                                   ║      Os Resultado De Todos Os Grandes Caracois                        ║ ");
         fim();
         System.out.println();
-        System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╦════════════════╦════════════════╦════════════════╗");
-        System.out.println("                                   ║ Velocidade ║     Tempo De    ║ Quantos Metros║  Tempo Por   ║   Total De   ║  Distanasia   ║   Posição    ║");
-        System.out.println("                                   ║            ║     Descanso    ║ Um Movimento  ║  movimento   ║   Movimentos ║  Percorrida   ║              ║      ");
-        System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╩════════════════╩════════════════╩════════════════╝");
+        System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╗");
+        System.out.println("                                   ║ Velocidade ║     Tempo De    ║ Quantos Metros║  Tempo Por   ║   Total De   ║  Distanasia   ║  média do    ║    Tempo     ║   Posição    ║    ");
+        System.out.println("                                   ║            ║     Descanso    ║ Um Movimento  ║  movimento   ║   Movimentos ║  Percorrida   ║   avanço     ║              ║              ║      ");
+        System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╝");
     }
     public void fim(){
         System.out.println("                                   ║                                                                       ║ ");
@@ -116,11 +116,26 @@ public class grafica {
         System.out.println();
     }
 
-    public void características_caracois_final(int numero_caracol,int velocidade,int tempo_descanso,int unidades_descanso,int tempo_de_movimento,int total_movimentos,int distancia_percorrida,int ranque)
+    public void características_caracois_final(int numero_caracol,int velocidade,int tempo_descanso,int unidades_descanso,int tempo_de_movimento,int total_movimentos,int distancia_percorrida,int ranque,long tenpo)
     {
-        System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦═════════════════╗");
+        System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦═════════════════╗");
         System.out.println(" O Grande Caracol De Numero "+numero_caracol+"           "+velocidade+"              "+tempo_descanso+"              "+unidades_descanso+"           "+tempo_de_movimento+"              "+
-                                                         total_movimentos+"             "+distancia_percorrida+"             "+ranque+"º" );
-        System.out.println("                                   ╚═════════════╩═══════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩═════════════════╝");
+                                                         total_movimentos+"             "+distancia_percorrida+"             "+(distancia_percorrida/total_movimentos)+"               "+tenpo+"             "+ranque+"º" );
+        System.out.println("                                   ╚═════════════╩═══════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩═════════════════╝");
     }
+    public void aposta_ganho(int n,String nome){
+        System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ║      A Grande Corrida Tem O Prazer De dizer senhor(a): "+nome);
+        System.out.println("                                   ║      Realizou Sabiamente O Seu Patrocínio No Grande Caracol: "+n);
+        fim();
+    }
+    public void aposta_perdeu(int n,String nome){
+        System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ║      A Grande Corrida Lamento De dizer senhor(a): "+nome);
+        System.out.println("                                   ║     Que Não Realizou Sabiamente O Seu Patrocínio No Grande Caracol: "+n);
+        fim();
+    }
+
 }

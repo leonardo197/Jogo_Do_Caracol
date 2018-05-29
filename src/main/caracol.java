@@ -9,6 +9,7 @@ class caracol extends Thread {
     private final Lock queueLock = new ReentrantLock();
     //---------var
     private int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,distancia_percorrida=0,total_movimentos,descanso,distancia_pista,r;
+    private long tempoInicial,tempoFinal,tempo;
     //private int;
     private Random gerador = new Random();
     private pista Comprimento_pista =new pista();
@@ -92,17 +93,15 @@ class caracol extends Thread {
         queueLock.unlock();
         guarda_posicao();
         int p=this.ranque.procurar_ranque(this.numero_caracol);
-        atributos.adicionar_final(this.numero_caracol, this.total_movimentos, this.distancia_percorrida,r);
+        tempoFinal = System.currentTimeMillis();
+        tempo=(((tempoFinal - tempoInicial) / 1000));
+        atributos.adicionar_final(this.numero_caracol, this.total_movimentos, this.distancia_percorrida,this.r,this.tempo);
 
         //ranque.listar();
     }
 
-
-
-
-
-
     public void run() {
+         tempoInicial = System.currentTimeMillis();
         System.out.println("caracol numero "+Thread.currentThread().getName() + " esta pronto para começar");
         correr();
     }

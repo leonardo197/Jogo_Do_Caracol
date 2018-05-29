@@ -8,7 +8,7 @@ public class jogo {
     public static void main(String[] args) {
 
 
-        int id, id_menu, N_Participantes = 0, Comprimento_pista = 0, Aposta = 0;
+        int id, id_menu, N_Participantes = 0, Comprimento_pista = 0, Aposta =-1;
         String Nome = null, Opcoes;
         Scanner teclado = new Scanner(System.in);
         //varivel como obegeto
@@ -106,8 +106,13 @@ public class jogo {
         ranque.listar_3();
         atributos.listar_final();
         //ranque.listar();
-
-
+        if (Aposta<=0){
+            if (ranque.listar_1() == Aposta) {
+                menu.aposta_ganho(Aposta, Nome);
+            } else {
+                menu.aposta_perdeu(Aposta, Nome);
+            }
+        }
     }
 
 }

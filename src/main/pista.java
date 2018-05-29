@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 class pista {
     private int Comprimento_pista ;
-    int ranque[] = new int[3];
+    //int ranque[] = new int[3];
 
     public int getComprimento_pista() {
         return this.Comprimento_pista;
