@@ -6,8 +6,6 @@ import java.util.Scanner;
 public class jogo {
 
     public static void main(String[] args) {
-
-
         int id, id_menu, N_Participantes = 0, Comprimento_pista = 0, Aposta =-1;
         String Nome = null, Opcoes;
         Scanner teclado = new Scanner(System.in);
@@ -17,8 +15,6 @@ public class jogo {
         grafica menu = new grafica();
         atributos atributos=new atributos();
         //menu
-
-
         menu.menu_inicial();
         while (Nome == null) {
             Nome = teclado.next().toString();
@@ -26,15 +22,14 @@ public class jogo {
                 System.out.print("                                   ║               O Seu Nome senhor(a): ");
             }
         }
-
         //--------------------------------------------------------participantes
         menu.menu_participantes();
         do {
             N_Participantes = teclado.nextInt();
-            if (N_Participantes < 3 || N_Participantes > 100) {
+            if (N_Participantes < 3 || N_Participantes > 150) {
                 System.out.print("                                   ║               O Numero de participantes : ");
             }
-        } while (N_Participantes < 3 || N_Participantes > 100);
+        } while (N_Participantes < 3 || N_Participantes > 150);
         //--------------------------------------------------------pista
         menu.menu_pista();
         do {

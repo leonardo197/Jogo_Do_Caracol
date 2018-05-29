@@ -2,7 +2,7 @@ package main;
 
 public class ranque {
     grafica grafica= new grafica();
-    int [] ranque = new int[100];
+    int [] ranque = new int[150];
     int count = 0;
     public int adicionar(int nome){
         if(count < (ranque.length-1)) {
