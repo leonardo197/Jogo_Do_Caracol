@@ -105,7 +105,7 @@ public class jogo {
 
         ranque.listar_3();
         atributos.listar_final();
-        ranque.listar();
+        //ranque.listar();
 
 
     }
