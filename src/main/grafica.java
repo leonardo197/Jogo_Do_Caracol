@@ -47,7 +47,14 @@ public class grafica {
         System.out.println("                                   ║                                                                       ║ ");
         System.out.print("                                   ║               Sim[s] Nao[n] : ");
     }
-
+    public void menu_patrocinar(){
+        System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ║      A Grande Corrida Precisa De Saber Qual Dos                       ║ ");
+        System.out.println("                                   ║      Nossos Grandes Caracois Pretende Patrocin                        ║ ");
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.print("                                   ║            Número Do Caracol : ");
+    }
     public void titolo(){
         System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
         System.out.println("                                   ║                                                                       ║ ");
@@ -75,6 +82,7 @@ public class grafica {
     public void fim(){
         System.out.println("                                   ║                                                                       ║ ");
         System.out.println("                                   ╚════════════════════════════════════════════════════════════════════════════════╝");
+        System.out.println();
     }
 
     public void características_caracois(int numero_caracol,int velocidade,int tempo_descanso,int unidades_descanso,int tempo_de_movimento)

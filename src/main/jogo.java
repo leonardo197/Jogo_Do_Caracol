@@ -55,6 +55,7 @@ public class jogo {
         for (int i = 0; i < N_Participantes; i++) {
             thread[i] = new Thread(new caracol(percurso, (i), ranque,atributos), "" + (i));
         }
+        //------------------------------
         Opcoes = teclado.next().toString();
         if (Opcoes.equals("s")) {
             menu.menu_características_sim();
@@ -62,10 +63,30 @@ public class jogo {
             if (Opcoes.equals("s")) {
                 menu.fim();
                 atributos.listar_inicial();
+                menu.menu_patrocinar();
+                do {
+                    Aposta = teclado.nextInt();
+                    if (Aposta<=0 && Aposta>=N_Participantes){
+                        System.out.print("                                    ║            Número Do Caracol : ");
 
-
+                    }
+                    else{break;}
+                }while (true);
+                menu.fim();
             }
-            else {menu.fim();}
+            else {//---------n
+                menu.fim();
+
+                menu.menu_patrocinar();
+                do {
+                    Aposta = teclado.nextInt();
+                    if (Aposta<=0 && Aposta>=N_Participantes){
+                        System.out.print("                                   ║            Número Do Caracol : ");
+
+                    }else{break;}
+                }while (true);
+                menu.fim();
+            }
         }
         else {menu.fim();}
 
@@ -89,21 +110,4 @@ public class jogo {
 
     }
 
-    public static int menu() {
-        Scanner teclado = new Scanner(System.in);
-        int m;
-        System.out.println("       Menu Conpelementar");
-        System.out.println("1_______________Reinisiar");
-        System.out.println("2________________Pausar");
-        System.out.println("3______________Terminar");
-        System.out.println();
-        System.out.print("Opeçao:  ");
-        m = teclado.nextInt();
-        return m;
-    }
-
-    public static void características() {
-
-
-    }
 }

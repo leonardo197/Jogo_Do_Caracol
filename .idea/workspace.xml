@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6cd9868a-5301-4695-8105-424ab9396787" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/caracol.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/caracol.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/ranque.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/ranque.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/atributos.java" afterPath="$PROJECT_DIR$/src/main/atributos.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/caracol.java" afterPath="$PROJECT_DIR$/src/main/caracol.java" />
       <change beforePath="$PROJECT_DIR$/src/main/grafica.java" afterPath="$PROJECT_DIR$/src/main/grafica.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/ranque.java" afterPath="$PROJECT_DIR$/src/main/ranque.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/jogo.java" afterPath="$PROJECT_DIR$/src/main/jogo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +24,8 @@
       <file leaf-file-name="jogo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="17" />
+            <state relative-caret-position="481">
+              <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grafica.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="grafica.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="114" column="136" lean-forward="false" selection-start-line="114" selection-start-column="136" selection-end-line="114" selection-end-column="136" />
+            <state relative-caret-position="425">
+              <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding>
                 <element signature="method#menu_inicial#0;class#grafica#0" expanded="false" />
                 <element signature="method#menu_participantes#0;class#grafica#0" expanded="false" />
@@ -74,8 +70,11 @@
                 <element signature="method#menu_características#0;class#grafica#0" expanded="false" />
                 <element signature="method#menu_características_sim#0;class#grafica#0" expanded="false" />
                 <element signature="method#titolo#0;class#grafica#0" expanded="false" />
+                <element signature="method#titolo_final#0;class#grafica#0" expanded="false" />
+                <element signature="method#fim#0;class#grafica#0" expanded="false" />
                 <element signature="method#características_caracois#0;class#grafica#0" expanded="false" />
                 <element signature="method#podio_3#0;class#grafica#0" expanded="false" />
+                <element signature="method#características_caracois_final#0;class#grafica#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -94,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="atributos.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="atributos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/atributos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="0">
+              <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,11 +129,11 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/pista.java" />
         <option value="$PROJECT_DIR$/src/main/teste.fxml" />
-        <option value="$PROJECT_DIR$/src/main/jogo.java" />
         <option value="$PROJECT_DIR$/src/main/ranque.java" />
-        <option value="$PROJECT_DIR$/src/main/grafica.java" />
         <option value="$PROJECT_DIR$/src/main/caracol.java" />
         <option value="$PROJECT_DIR$/src/main/atributos.java" />
+        <option value="$PROJECT_DIR$/src/main/jogo.java" />
+        <option value="$PROJECT_DIR$/src/main/grafica.java" />
       </list>
     </option>
   </component>
@@ -349,7 +348,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -359,7 +357,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23261118" sideWeight="0.5021482" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44469783" sideWeight="0.49785176" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8825542" sideWeight="0.49785176" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -386,7 +384,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/grafica.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/grafica.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -444,8 +456,11 @@
             <element signature="method#menu_características#0;class#grafica#0" expanded="false" />
             <element signature="method#menu_características_sim#0;class#grafica#0" expanded="false" />
             <element signature="method#titolo#0;class#grafica#0" expanded="false" />
+            <element signature="method#titolo_final#0;class#grafica#0" expanded="false" />
+            <element signature="method#fim#0;class#grafica#0" expanded="false" />
             <element signature="method#características_caracois#0;class#grafica#0" expanded="false" />
             <element signature="method#podio_3#0;class#grafica#0" expanded="false" />
+            <element signature="method#características_caracois_final#0;class#grafica#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -566,19 +581,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
+    <entry file="file://$PROJECT_DIR$/src/main/caracol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="114" column="136" lean-forward="false" selection-start-line="114" selection-start-column="136" selection-end-line="114" selection-end-column="136" />
+        <state relative-caret-position="-474">
+          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
           <folding>
-            <element signature="method#menu_inicial#0;class#grafica#0" expanded="false" />
-            <element signature="method#menu_participantes#0;class#grafica#0" expanded="false" />
-            <element signature="method#menu_pista#0;class#grafica#0" expanded="false" />
-            <element signature="method#menu_características#0;class#grafica#0" expanded="false" />
-            <element signature="method#menu_características_sim#0;class#grafica#0" expanded="false" />
-            <element signature="method#titolo#0;class#grafica#0" expanded="false" />
-            <element signature="method#características_caracois#0;class#grafica#0" expanded="false" />
-            <element signature="method#podio_3#0;class#grafica#0" expanded="false" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#Descansar#0;class#caracol#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/atributos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -594,31 +621,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/caracol.java">
+    <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-474">
-          <caret line="47" column="45" lean-forward="false" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+        <state relative-caret-position="425">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Descansar#0;class#caracol#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="85" column="17" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/atributos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#menu_inicial#0;class#grafica#0" expanded="false" />
+            <element signature="method#menu_participantes#0;class#grafica#0" expanded="false" />
+            <element signature="method#menu_pista#0;class#grafica#0" expanded="false" />
+            <element signature="method#menu_características#0;class#grafica#0" expanded="false" />
+            <element signature="method#menu_características_sim#0;class#grafica#0" expanded="false" />
+            <element signature="method#titolo#0;class#grafica#0" expanded="false" />
+            <element signature="method#titolo_final#0;class#grafica#0" expanded="false" />
+            <element signature="method#fim#0;class#grafica#0" expanded="false" />
+            <element signature="method#características_caracois#0;class#grafica#0" expanded="false" />
+            <element signature="method#podio_3#0;class#grafica#0" expanded="false" />
+            <element signature="method#características_caracois_final#0;class#grafica#0" expanded="false" />
           </folding>
         </state>
       </provider>
