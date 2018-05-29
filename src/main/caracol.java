@@ -8,7 +8,7 @@ import java.util.concurrent.locks.ReentrantLock;
 class caracol extends Thread {
     private final Lock queueLock = new ReentrantLock();
     //---------var
-    private int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,distancia_percorrida=0,total_movimentos,descanso,distancia_pista;
+    private int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,distancia_percorrida=0,total_movimentos,descanso,distancia_pista,r;
     //private int;
     private Random gerador = new Random();
     private pista Comprimento_pista =new pista();
@@ -45,7 +45,7 @@ class caracol extends Thread {
     public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque,atributos atributos)
     {
         this.numero_caracol=numero_caracol;
-        this.velocidade=gerador.nextInt(1)+10;
+        this.velocidade=gerador.nextInt(10)+1;
         this.tempo_descanso=gerador.nextInt(250)+1;
         this.tempo_de_movimento=gerador.nextInt(250)+350;
         this.unidades_descanso=gerador.nextInt(7)+10;
@@ -73,7 +73,7 @@ class caracol extends Thread {
     }
     public void guarda_posicao() {
         synchronized (ranque) {
-            ranque.adicionar(this.numero_caracol);
+            this.r=ranque.adicionar(this.numero_caracol);
         }
     }
 
@@ -91,7 +91,8 @@ class caracol extends Thread {
         }
         queueLock.unlock();
         guarda_posicao();
-        atributos.adicionar_final(numero_caracol, total_movimentos, distancia_percorrida, ranque.procurar_ranque(numero_caracol));
+        int p=this.ranque.procurar_ranque(this.numero_caracol);
+        atributos.adicionar_final(this.numero_caracol, this.total_movimentos, this.distancia_percorrida,r);
 
         //ranque.listar();
     }

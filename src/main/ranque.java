@@ -4,11 +4,11 @@ public class ranque {
     grafica grafica= new grafica();
     int [] ranque = new int[50];
     int count = 0;
-    public void adicionar(int nome){
+    public int adicionar(int nome){
         if(count < (ranque.length-1)) {
             ranque[count++] = nome;
-
         }
+        return count;
     }
     public void listar(){
         for (int i = 0; i < count; i++) {
@@ -20,14 +20,13 @@ public class ranque {
     }
     public int procurar_ranque(int numero){
         int p=0;
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < count; i++) {
             if (ranque[i]==numero){
                 p= ranque[i];
                 break;
             }
         }
         return p;
-
     }
 
 }
