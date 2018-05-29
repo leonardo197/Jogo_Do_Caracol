@@ -1,5 +1,6 @@
 package main;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 
@@ -25,17 +26,33 @@ public class jogo {
         //--------------------------------------------------------participantes
         menu.menu_participantes();
         do {
-            N_Participantes = teclado.nextInt();
-            if (N_Participantes < 3 || N_Participantes > 150) {
+            try {
+                N_Participantes = teclado.nextInt();
+                if (N_Participantes < 3 || N_Participantes > 150) {
+                    System.out.print("                                   ║               O Numero de participantes :                            ");
+                }
+            }catch (InputMismatchException e){
+                System.out.println("                                   ║                                                                       ║ ");
+                System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
                 System.out.print("                                   ║               O Numero de participantes : ");
+
+                teclado.next();
             }
         } while (N_Participantes < 3 || N_Participantes > 150);
         //--------------------------------------------------------pista
         menu.menu_pista();
         do {
+            try {
             Comprimento_pista = teclado.nextInt();
             if (Comprimento_pista < 100) {
                 System.out.print("                                   ║               O Numero De Metros : ");
+            }
+            }catch (InputMismatchException e){
+                System.out.println("                                   ║                                                                       ║ ");
+                System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Que 100      ║       ");
+                System.out.print("                                   ║               O Numero De Metros : ");
+
+                teclado.next();
             }
         } while (Comprimento_pista < 100);
         percurso.setComprimento_pista(Comprimento_pista);//adisiona o Comprimento pista
@@ -60,12 +77,20 @@ public class jogo {
                 atributos.listar_inicial();
                 menu.menu_patrocinar();
                 do {
+                    try {
                     Aposta = teclado.nextInt();
                     if (Aposta<=0 && Aposta>=N_Participantes){
                         System.out.print("                                    ║            Número Do Caracol : ");
 
                     }
                     else{break;}
+                    }catch (InputMismatchException e){
+                        System.out.println("                                   ║                                                                       ║ ");
+                        System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e "+N_Participantes);
+                        System.out.print("                                   ║               Número Do Caracol : ");
+
+                        teclado.next();
+                    }
                 }while (true);
                 menu.fim();
             }
@@ -74,11 +99,19 @@ public class jogo {
 
                 menu.menu_patrocinar();
                 do {
+                    try {
                     Aposta = teclado.nextInt();
                     if (Aposta<=0 && Aposta>=N_Participantes){
                         System.out.print("                                   ║            Número Do Caracol : ");
 
                     }else{break;}
+                    }catch (InputMismatchException e){
+                        System.out.println("                                   ║                                                                       ║ ");
+                        System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e "+N_Participantes);
+                        System.out.print("                                   ║               Número Do Caracol : ");
+
+                        teclado.next();
+                    }
                 }while (true);
                 menu.fim();
             }
