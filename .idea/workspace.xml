@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6cd9868a-5301-4695-8105-424ab9396787" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/atributos.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/atributos.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/caracol.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/caracol.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/grafica.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/grafica.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/jogo.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/jogo.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/ranque.class" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/ranque.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/atributos.java" afterPath="$PROJECT_DIR$/src/main/atributos.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/caracol.java" afterPath="$PROJECT_DIR$/src/main/caracol.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/grafica.java" afterPath="$PROJECT_DIR$/src/main/grafica.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/jogo.java" afterPath="$PROJECT_DIR$/src/main/jogo.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/pista.java" afterPath="$PROJECT_DIR$/src/main/pista.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/ranque.java" afterPath="$PROJECT_DIR$/src/main/ranque.java" />
-    </list>
+    <list default="true" id="6cd9868a-5301-4695-8105-424ab9396787" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
