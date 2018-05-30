@@ -21,7 +21,7 @@ public class jogo {
         do {
             try {
                 Linguagem = teclado.next().charAt(0);
-                if ( Linguagem != 'P'|| Linguagem != 'p'||Linguagem != 'e'|| Linguagem != 'E') {
+                if ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E') {
                     System.out.println("                                       Qual Q Língua(Which Language)?: ");
                 }
                 else if(Linguagem == 'P'|| Linguagem == 'p') {
@@ -40,7 +40,7 @@ public class jogo {
                 teclado.next();
             }
 
-        } while ( Linguagem != 'P'|| Linguagem != 'p'||Linguagem != 'e'|| Linguagem != 'E');
+        } while ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E');
         menu.setLinguagem(Linguagem);
 
 
