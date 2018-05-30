@@ -21,19 +21,26 @@ public class jogo {
         do {
             try {
                 Linguagem = teclado.next().charAt(0);
-                if (Linguagem != 'E' && Linguagem != 'P'&&Linguagem != 'e' && Linguagem != 'p') {
+                if ( Linguagem != 'P'|| Linguagem != 'p'||Linguagem != 'e'|| Linguagem != 'E') {
                     System.out.println("                                       Qual Q Língua(Which Language)?: ");
                 }
+                else if(Linguagem == 'P'|| Linguagem == 'p') {
+                    if(Linguagem == 'P'|| Linguagem == 'p')
+                        Linguagem='P';
+                }else {
+                    Linguagem='E';
+                }
+
             } catch (InputMismatchException e) {
                 System.out.println("");
-                System.out.println("                                                 Português=P  English=p");
+                System.out.println("                                                 Português=P  English=E");
                 System.out.println("                                       Qual Q Língua(Which Language)?: ");
 
 
                 teclado.next();
             }
 
-        } while (Linguagem != 'E' && Linguagem != 'P'&&Linguagem != 'e' && Linguagem != 'p');
+        } while ( Linguagem != 'P'|| Linguagem != 'p'||Linguagem != 'e'|| Linguagem != 'E');
         menu.setLinguagem(Linguagem);
 
 
