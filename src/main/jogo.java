@@ -90,37 +90,30 @@ public class jogo {
                 do {
                     try {
                         Aposta = teclado.nextInt();
-                        if (Aposta <= 0 && Aposta >= N_Participantes) {
+                        if (Aposta <0 || Aposta > N_Participantes){
                             menu.erro_Numero_Caracol();
                         } else {
                             break;
                         }
                     } catch (InputMismatchException e) {
-                        System.out.println("                                   ║                                                                       ║ ");
-                        System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e " + N_Participantes);
-                        System.out.print("                                   ║               Número Do Caracol : ");
-
+                        menu.erro_Numero_Caracol_catch(N_Participantes);
                         teclado.next();
                     }
                 } while (true);
                 menu.fim();
             } else {//---------n
                 menu.fim();
-
                 menu.menu_patrocinar();
                 do {
                     try {
                         Aposta = teclado.nextInt();
-                        if (Aposta <= 0 && Aposta >= N_Participantes) {
+                        if (Aposta <0 || Aposta > N_Participantes) {
                             menu.erro_Numero_Caracol();
                         } else {
                             break;
                         }
                     } catch (InputMismatchException e) {
-                        System.out.println("                                   ║                                                                       ║ ");
-                        System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e " + N_Participantes);
-                        System.out.print("                                   ║               Número Do Caracol : ");
-
+                        menu.erro_Numero_Caracol_catch(N_Participantes);
                         teclado.next();
                     }
                 } while (true);

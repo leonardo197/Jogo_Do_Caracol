@@ -23,7 +23,7 @@ public class grafica {
         System.out.println("                                                  Português                                English          ");
         System.out.println("                                                      P                                       E          ");
         System.out.println();
-        System.out.println("                                       Qual Q Língua(Which Language)?: ");
+        System.out.print("                                       Qual Q Língua(Which Language)?: ");
     }
 
     public void menu_inicial() {
@@ -306,17 +306,13 @@ public class grafica {
 
     ///-------------erros
     public void erro_Linguagem() {
-        if (Linguagem == 'P') {
             System.out.println();
-            System.out.println("                                       Qual Q Língua(Which Language)?: ");
-        }else {
-
-        }
+            System.out.print("                                       Qual Q Língua(Which Language)?: ");
     }
     public void erro_Numero() {
         if (Linguagem == 'P') {
             System.out.println();
-            System.out.print("                                   ║               O Numero de participantes :                            ");
+            System.out.print("                                   ║               O Numero de participantes : ");
         }else {
 
         }
@@ -355,35 +351,16 @@ public class grafica {
     }
     public void erro_Numero_Caracol() {
         if (Linguagem == 'P') {
-            System.out.print("                                    ║            Número Do Caracol : ");
+            System.out.print("                                   ║            Número Do Caracol : ");
         }else {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Numero_Caracol_catch(int N_Participantes) {
         if (Linguagem == 'P') {
-
-        }else {
-
-        }
-    }
-    public void erro_Linguagem() {
-        if (Linguagem == 'P') {
-
-        }else {
-
-        }
-    }
-    public void erro_Linguagem() {
-        if (Linguagem == 'P') {
-
-        }else {
-
-        }
-    }
-    public void erro_Linguagem() {
-        if (Linguagem == 'P') {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e " + N_Participantes);
+            System.out.print("                                   ║               Número Do Caracol : ");
         }else {
 
         }
