@@ -15,11 +15,14 @@ public class grafica {
     }
 
     //public int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,descanso,distancia_pista,N_Participantes=0,Comprimento_pista,n_letraras;
+    //------------------------------------normal
+    //----------------------menu
     public void Linguagem() {
         System.out.println("");
         System.out.println("                                                  Linguagem                               Language          ");
         System.out.println("                                                  Português                                English          ");
         System.out.println("                                                      P                                       E          ");
+        System.out.println();
         System.out.println("                                       Qual Q Língua(Which Language)?: ");
     }
 
@@ -55,10 +58,10 @@ public class grafica {
             System.out.print("                                   ║               O Numero de participantes : ");
         } else {
 
-                System.out.println("                                   ║                                                                       ║ ");
-                System.out.println("                                   ║      The Great Race Needs To Know The Number Of Participants      ║ ");
-                System.out.println("                                   ║                                                                       ║ ");
-                System.out.print("                                   ║               O Number of participants : ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║      The Great Race Needs To Know The Number Of Participants      ║ ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.print("                                   ║               O Number of participants : ");
         }
     }
 
@@ -74,7 +77,8 @@ public class grafica {
             System.out.println("                                   ║      The Great Race Needs To Know How Many Meters Do You Want          ║ ");
             System.out.println("                                   ║                       The Big Snails Meters                      ║ ");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║               The number of meters : ");        }
+            System.out.print("                                   ║               The number of meters : ");
+        }
     }
 
     public void menu_características() {
@@ -126,6 +130,7 @@ public class grafica {
             System.out.print("                                   ║            Snail Number : ");
         }
     }
+    //----------------------------atributos
 
     public void titolo() {
         if (Linguagem == 'P') {
@@ -183,9 +188,9 @@ public class grafica {
 
     public void fim() {
 
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ╚════════════════════════════════════════════════════════════════════════════════╝");
-            System.out.println();
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ╚════════════════════════════════════════════════════════════════════════════════╝");
+        System.out.println();
     }
 
     public void características_caracois(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento) {
@@ -199,6 +204,7 @@ public class grafica {
             System.out.println("                                   ╚═════════════╩═══════════════════╩════════════════╩═════════════════╝");
         }
     }
+//-------------------------------podio
 
     public void podio_3(int i1, int i2, int i3) {
         if (Linguagem == 'P') {
@@ -265,6 +271,7 @@ public class grafica {
         }
     }
 
+    //----------------------------aposta
     public void aposta_ganho(int n, String nome) {
         if (Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -294,6 +301,87 @@ public class grafica {
             System.out.println("                                   ║      The Great Race I am sorry to say Sir(Mrs): " + nome);
             System.out.println("                                   ║     Who Did Not Wisely Perform Your Sponsorship On The Great Snail: " + n);
             fim();
+        }
+    }
+
+    ///-------------erros
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+            System.out.println();
+            System.out.println("                                       Qual Q Língua(Which Language)?: ");
+        }else {
+
+        }
+    }
+    public void erro_Numero() {
+        if (Linguagem == 'P') {
+            System.out.println();
+            System.out.print("                                   ║               O Numero de participantes :                            ");
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
+        }
+    }
+    public void erro_Linguagem() {
+        if (Linguagem == 'P') {
+
+        }else {
+
         }
     }
 

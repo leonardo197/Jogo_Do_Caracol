@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd9868a-5301-4695-8105-424ab9396787" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/jogo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Jogo_Do_Caracol/main/grafica.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/grafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grafica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jogo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,13 +19,61 @@
       <FILTER>main.*</FILTER>
     </SUITE>
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="grafica.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="569">
+                    <caret line="321" column="9" lean-forward="true" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="9" />
+                    <folding>
+                      <element signature="e#170#171#0" expanded="true" />
+                      <element signature="e#207#208#0" expanded="true" />
+                      <element signature="method#Linguagem#0;class#grafica#0" />
+                      <element signature="method#menu_inicial#0;class#grafica#0" />
+                      <element signature="method#menu_participantes#0;class#grafica#0" />
+                      <element signature="method#menu_pista#0;class#grafica#0" />
+                      <element signature="method#menu_características#0;class#grafica#0" />
+                      <element signature="method#menu_características_sim#0;class#grafica#0" />
+                      <element signature="method#menu_patrocinar#0;class#grafica#0" />
+                      <element signature="method#titolo#0;class#grafica#0" />
+                      <element signature="method#titolo_final#0;class#grafica#0" />
+                      <element signature="method#fim#0;class#grafica#0" />
+                      <element signature="method#características_caracois#0;class#grafica#0" />
+                      <element signature="method#podio_3#0;class#grafica#0" />
+                      <element signature="method#características_caracois_final#0;class#grafica#0" />
+                      <element signature="method#aposta_ganho#0;class#grafica#0" />
+                      <element signature="method#aposta_perdeu#0;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#0;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#2;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#3;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#4;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#5;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#6;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#7;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#8;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#9;class#grafica#0" />
+                      <element signature="method#erro_Linguagem#10;class#grafica#0" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="jogo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="306">
+              <caret line="39" column="95" selection-start-line="39" selection-start-column="91" selection-end-line="39" selection-end-column="95" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,34 +104,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#setComprimento_pista#0;class#pista#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="grafica.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
-              <folding>
-                <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#207#208#0" expanded="true" />
-                <element signature="method#Linguagem#0;class#grafica#0" />
-                <element signature="method#menu_inicial#0;class#grafica#0" />
-                <element signature="method#menu_participantes#0;class#grafica#0" />
-                <element signature="method#menu_pista#0;class#grafica#0" />
-                <element signature="method#menu_características#0;class#grafica#0" />
-                <element signature="method#menu_características_sim#0;class#grafica#0" />
-                <element signature="method#menu_patrocinar#0;class#grafica#0" />
-                <element signature="method#titolo#0;class#grafica#0" />
-                <element signature="method#titolo_final#0;class#grafica#0" />
-                <element signature="method#fim#0;class#grafica#0" />
-                <element signature="method#características_caracois#0;class#grafica#0" />
-                <element signature="method#podio_3#0;class#grafica#0" />
-                <element signature="method#características_caracois_final#0;class#grafica#0" />
-                <element signature="method#aposta_ganho#0;class#grafica#0" />
-                <element signature="method#aposta_perdeu#0;class#grafica#0" />
               </folding>
             </state>
           </provider>
@@ -306,12 +325,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526402678185</updated>
-      <workItem from="1527718538325" duration="3389000" />
+      <workItem from="1527718538325" duration="6389000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3389000" />
+    <option name="totallyTimeSpent" value="6389000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,7 +347,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="8" />
       <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3249715" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32413793" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
@@ -336,7 +355,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295325" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49785176" visible="true" weight="0.12" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49785176" visible="true" weight="0.27448276" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295325" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -373,8 +392,14 @@
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/grafica.java</url>
+          <line>135</line>
+          <properties />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="69" />
+      <option name="time" value="70" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -434,6 +459,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>
@@ -516,6 +551,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>
@@ -598,6 +643,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>
@@ -680,6 +735,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>
@@ -775,6 +840,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>
@@ -931,10 +1006,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="39" column="95" selection-start-line="39" selection-start-column="91" selection-end-line="39" selection-end-column="95" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
+        <state relative-caret-position="569">
+          <caret line="321" column="9" lean-forward="true" selection-start-line="321" selection-start-column="9" selection-end-line="321" selection-end-column="9" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
             <element signature="e#207#208#0" expanded="true" />
@@ -953,16 +1038,16 @@
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
             <element signature="method#aposta_perdeu#0;class#grafica#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="method#erro_Linguagem#0;class#grafica#0" />
+            <element signature="method#erro_Linguagem#2;class#grafica#0" />
+            <element signature="method#erro_Linguagem#3;class#grafica#0" />
+            <element signature="method#erro_Linguagem#4;class#grafica#0" />
+            <element signature="method#erro_Linguagem#5;class#grafica#0" />
+            <element signature="method#erro_Linguagem#6;class#grafica#0" />
+            <element signature="method#erro_Linguagem#7;class#grafica#0" />
+            <element signature="method#erro_Linguagem#8;class#grafica#0" />
+            <element signature="method#erro_Linguagem#9;class#grafica#0" />
+            <element signature="method#erro_Linguagem#10;class#grafica#0" />
           </folding>
         </state>
       </provider>

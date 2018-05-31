@@ -19,10 +19,9 @@ public class jogo {
         //menu
         menu.Linguagem();
         do {
-            try {
                 Linguagem = teclado.next().charAt(0);
                 if ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E') {
-                    System.out.println("                                       Qual Q Língua(Which Language)?: ");
+                    menu.erro_Linguagem();
                 }
                 else if(Linguagem == 'P'|| Linguagem == 'p') {
                     if(Linguagem == 'P'|| Linguagem == 'p')
@@ -30,16 +29,6 @@ public class jogo {
                 }else {
                     Linguagem='E';
                 }
-
-            } catch (InputMismatchException e) {
-                System.out.println("");
-                System.out.println("                                                 Português=P  English=E");
-                System.out.println("                                       Qual Q Língua(Which Language)?: ");
-
-
-                teclado.next();
-            }
-
         } while ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E');
         menu.setLinguagem(Linguagem);
 
@@ -57,7 +46,7 @@ public class jogo {
             try {
                 N_Participantes = teclado.nextInt();
                 if (N_Participantes < 3 || N_Participantes > 150) {
-                    System.out.print("                                   ║               O Numero de participantes :                            ");
+                    menu.erro_Numero();
                 }
             } catch (InputMismatchException e) {
                 System.out.println("                                   ║                                                                       ║ ");
