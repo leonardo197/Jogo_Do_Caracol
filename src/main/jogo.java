@@ -32,12 +32,12 @@ public class jogo {
         } while ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E');
         menu.setLinguagem(Linguagem);
 
-
+///------------------------otilisador
         menu.menu_inicial();
         while (Nome == null) {
             Nome = teclado.next().toString();
             if (Nome == null) {
-                System.out.print("                                   ║               O Seu Nome senhor(a): ");
+                menu.erro_Nome();
             }
         }
         //--------------------------------------------------------participantes
@@ -49,10 +49,7 @@ public class jogo {
                     menu.erro_Numero();
                 }
             } catch (InputMismatchException e) {
-                System.out.println("                                   ║                                                                       ║ ");
-                System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
-                System.out.print("                                   ║               O Numero de participantes : ");
-
+                menu.erro_Nome_catch();
                 teclado.next();
             }
         } while (N_Participantes < 3 || N_Participantes > 150);
@@ -62,13 +59,10 @@ public class jogo {
             try {
                 Comprimento_pista = teclado.nextInt();
                 if (Comprimento_pista < 100) {
-                    System.out.print("                                   ║               O Numero De Metros : ");
+                    menu.erro_Metros();
                 }
             } catch (InputMismatchException e) {
-                System.out.println("                                   ║                                                                       ║ ");
-                System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Que 100      ║       ");
-                System.out.print("                                   ║               O Numero De Metros : ");
-
+                menu.erro_Metros_catch();
                 teclado.next();
             }
         } while (Comprimento_pista < 100);
@@ -97,8 +91,7 @@ public class jogo {
                     try {
                         Aposta = teclado.nextInt();
                         if (Aposta <= 0 && Aposta >= N_Participantes) {
-                            System.out.print("                                    ║            Número Do Caracol : ");
-
+                            menu.erro_Numero_Caracol();
                         } else {
                             break;
                         }
@@ -119,8 +112,7 @@ public class jogo {
                     try {
                         Aposta = teclado.nextInt();
                         if (Aposta <= 0 && Aposta >= N_Participantes) {
-                            System.out.print("                                   ║            Número Do Caracol : ");
-
+                            menu.erro_Numero_Caracol();
                         } else {
                             break;
                         }

@@ -321,37 +321,41 @@ public class grafica {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Nome_catch() {
         if (Linguagem == 'P') {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
+            System.out.print("                                   ║               O Numero de participantes : ");
         }else {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Nome() {
         if (Linguagem == 'P') {
-
+            System.out.print("                                   ║               O Seu Nome senhor(a): ");
         }else {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Metros() {
         if (Linguagem == 'P') {
-
+            System.out.print("                                   ║               O Numero De Metros : ");
         }else {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Metros_catch() {
         if (Linguagem == 'P') {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Que 100      ║       ");
+            System.out.print("                                   ║               O Numero De Metros : ");
         }else {
 
         }
     }
-    public void erro_Linguagem() {
+    public void erro_Numero_Caracol() {
         if (Linguagem == 'P') {
-
+            System.out.print("                                    ║            Número Do Caracol : ");
         }else {
 
         }
