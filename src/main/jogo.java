@@ -77,19 +77,23 @@ public class jogo {
         // caracol caracols[] = new caracol[N_Participantes];
 
         //---------------------------apostar
-        menu.menu_características();
+        menu.menu_caracteristicas();
         for (int i = 0; i < N_Participantes; i++) {
-            thread[i] = new Thread(new caracol(percurso, (i), ranque, atributos), "" + (i));
+            thread[i] = new Thread(new caracol(percurso, (i), ranque, atributos,menu), "" + (i));
         }
         //------------------------------
         Opcoes = teclado.next().toString();
         if (Opcoes.equals("s")||Opcoes.equals("S")) {
-            menu.menu_características_sim();
+            menu.menu_caracteristicas_sim();
             Opcoes = teclado.next().toString();
-            if (Opcoes.equals("s")||Opcoes.equals("S")){
+            if (Opcoes.equals("s")||Opcoes.equals("S")) {
                 menu.fim();
                 atributos.listar_inicial();
                 menu.menu_patrocinar();
+            }else {
+                menu.fim();
+                menu.menu_patrocinar();
+            }
                 do {
                     try {
                         Aposta = teclado.nextInt();
@@ -104,24 +108,7 @@ public class jogo {
                     }
                 } while (true);
                 menu.fim();
-            } else {//---------n
-                menu.fim();
-                menu.menu_patrocinar();
-                do {
-                    try {
-                        Aposta = teclado.nextInt();
-                        if (Aposta <0 || Aposta > N_Participantes) {
-                            menu.erro_Numero_Caracol();
-                        } else {
-                            break;
-                        }
-                    } catch (InputMismatchException e) {
-                        menu.erro_Numero_Caracol_catch(N_Participantes);
-                        teclado.next();
-                    }
-                } while (true);
-                menu.fim();
-            }
+
         } else {
             menu.fim();
         }

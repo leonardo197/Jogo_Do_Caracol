@@ -81,7 +81,7 @@ public class grafica {
         }
     }
 
-    public void menu_características() {
+    public void menu_caracteristicas() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Se Pretende                    ║ ");
@@ -97,7 +97,7 @@ public class grafica {
         }
     }
 
-    public void menu_características_sim() {
+    public void menu_caracteristicas_sim() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Se Gostaria                    ║ ");
@@ -193,7 +193,7 @@ public class grafica {
         System.out.println();
     }
 
-    public void características_caracois(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento) {
+    public void caracteristicas_caracois(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento) {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦═════════════════╗");
             System.out.println(" O Grande Caracol De Numero " + numero_caracol + "           " + velocidade + "              " + tempo_descanso + "              " + unidades_descanso + "           " + tempo_de_movimento + "       ");
@@ -256,7 +256,7 @@ public class grafica {
         }
     }// The Big Number Snail       "
 
-    public void características_caracois_final(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento, int total_movimentos, int distancia_percorrida, int ranque, long tenpo) {
+    public void caracteristicas_caracois_final(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento, int total_movimentos, int distancia_percorrida, int ranque, long tenpo) {
         if (Linguagem == 'P') {
             System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦═════════════════╗");
             System.out.println(" O Grande Caracol De Numero " + numero_caracol + "           " + velocidade + "              " + tempo_descanso + "              " + unidades_descanso + "           " + tempo_de_movimento + "              " +
@@ -303,7 +303,18 @@ public class grafica {
             fim();
         }
     }
-
+    //----------------posicao do caracol
+    public void movimento_caracol(int distancia_percorrida, int numero_caracol,int distancia_pista) {
+        if (Linguagem == 'P') {
+            System.out.println("                                   ║                                                                        ");
+            System.out.println("                                   ║   O Grande Caracol "+ numero_caracol +" Locomover-se "+distancia_percorrida+"m");
+            System.out.println("                                   ║   Ainda-lhe Falta "+(distancia_pista-distancia_percorrida)+"m Num Total De "+distancia_pista+"m");
+        } else {
+            System.out.println("                                   ║                                                                        ");
+            System.out.println("                                   ║   The Great Snail "+ numero_caracol +" move around "+distancia_percorrida+"m");
+            System.out.println("                                   ║   Still Missing "+(distancia_pista-distancia_percorrida)+"m In a total of "+distancia_pista+"m");
+        }
+    }
     ///-------------erros
     public void erro_Linguagem() {
             System.out.println();

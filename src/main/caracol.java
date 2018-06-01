@@ -16,50 +16,29 @@ class caracol extends Thread {
     private pista Comprimento_pista = new pista();
     private ranque ranque = new ranque();
     private atributos atributos = new atributos();
+    grafica grafica =new grafica();
 
     //------------get/set
-    public void setNumero_caracol(int numero_caracol) {
-        this.numero_caracol = numero_caracol;
-    }
-
-    public int getTempo_descanso() {
-        return tempo_descanso;
-    }
 
     public int getTempo_movimento() {
         return tempo_de_movimento;
-    }
-
-    public int getUnidades_descanso() {
-        return unidades_descanso;
     }
 
     public int getVelocidade() {
         return velocidade;
     }
 
-    public int getNumero_caracol() {
-        return numero_caracol;
-    }
 
-    public int getDescanso() {
-        return descanso;
-    }
-
-    public int getTempo_de_movimento() {
-        return tempo_de_movimento;
-    }
-
-
-    public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque, atributos atributos) {
+    public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque, atributos atributos,grafica menu) {
+        this.grafica= menu;
+        this.ranque = ranque;
+        this.atributos = atributos;
         this.numero_caracol = numero_caracol;
         this.velocidade = gerador.nextInt(10) + 1;
         this.tempo_descanso = gerador.nextInt(250) + 1;
-        this.tempo_de_movimento = gerador.nextInt(250) + 350;
         this.unidades_descanso = gerador.nextInt(7) + 10;
+        this.tempo_de_movimento = gerador.nextInt(250) + 350;
         this.distancia_pista = Comprimento_pista.getComprimento_pista();
-        this.ranque = ranque;
-        this.atributos = atributos;
         atributos.adicionar_inicial(numero_caracol, velocidade, tempo_descanso, unidades_descanso, tempo_de_movimento, descanso);
     }
     //------------------------cod
@@ -96,15 +75,16 @@ class caracol extends Thread {
                 Descansar(gerador.nextInt(tempo_descanso) + 1);
             }
             Descansar(gerador.nextInt(getTempo_movimento()));
-            System.out.println(this.distancia_percorrida + "m caracol " + this.numero_caracol + " total " + this.distancia_pista);
+           grafica.movimento_caracol(this.distancia_percorrida,this.numero_caracol,this.distancia_pista);
+            //System.out.println(this.distancia_percorrida + "m caracol " + this.numero_caracol + " total " + this.distancia_pista);//-----------por na grafica em pt e en
         }
-        queueLock.unlock();
+
         guarda_posicao();
         int p = this.ranque.procurar_ranque(this.numero_caracol);
         tempoFinal = System.currentTimeMillis();
         tempo = ((tempoFinal - tempoInicial) / 1000);
         atributos.adicionar_final(this.numero_caracol, this.total_movimentos, this.distancia_percorrida, this.r, this.tempo);
-
+        queueLock.unlock();
         //ranque.listar();
     }
 

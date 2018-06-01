@@ -51,7 +51,7 @@ public class atributos {
         queueLock.lock();
         grafica.titolo();
         for (int i = 0; i < cont; i++) {
-            grafica.características_caracois(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i]);
+            grafica.caracteristicas_caracois(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i]);
         }
         queueLock.unlock();
     }
@@ -60,7 +60,7 @@ public class atributos {
         queueLock.lock();
         grafica.titolo_final();
         for (int i = 0; i < cont; i++) {
-            grafica.características_caracois_final(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i], total_movimentos[i], distancia_percorrida[i], ranque[i], tenpo[i]);
+            grafica.caracteristicas_caracois_final(i, velocidade[i], tempo_descanso[i], unidades_descanso[i], tempo_de_movimento[i], total_movimentos[i], distancia_percorrida[i], ranque[i], tenpo[i]);
         }
         queueLock.unlock();
     }

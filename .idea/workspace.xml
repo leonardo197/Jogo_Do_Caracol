@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd9868a-5301-4695-8105-424ab9396787" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/atributos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/atributos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/caracol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/caracol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/grafica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/grafica.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/jogo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ranque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ranque.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="jogo.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="jogo.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="143">
+              <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -37,8 +38,19 @@
       <file leaf-file-name="caracol.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/caracol.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347">
-              <caret line="62" column="97" selection-start-line="62" selection-start-column="80" selection-end-line="62" selection-end-column="97" />
+            <state relative-caret-position="-34">
+              <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+              <folding>
+                <element signature="e#771#772#0" expanded="true" />
+                <element signature="e#812#813#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="method#caracol#0;class#caracol#0" />
+                <element signature="method#Descansar#0;class#caracol#0" />
+                <element signature="method#guarda_posicao#0;class#caracol#0" />
+                <element signature="method#correr#0;class#caracol#0" />
+                <element signature="method#run#0;class#caracol#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,7 +58,7 @@
       <file leaf-file-name="pista.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/pista.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
+            <state relative-caret-position="153">
               <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,10 +72,8 @@
         <entry file="file://$PROJECT_DIR$/src/main/ranque.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#247#248#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
                 <element signature="method#adicionar#0;class#ranque#0" />
                 <element signature="method#listar#0;class#ranque#0" />
                 <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -75,27 +85,26 @@
       <file leaf-file-name="atributos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/atributos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="53" column="87" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
+            <state relative-caret-position="185">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#788#789#0" expanded="true" />
                 <element signature="e#826#827#0" expanded="true" />
                 <element signature="method#adicionar_final#0;class#atributos#0" />
-                <element signature="method#listar_final#0;class#atributos#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="grafica.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="grafica.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="208" column="23" selection-start-line="208" selection-start-column="16" selection-end-line="208" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="314" column="142" selection-start-line="314" selection-start-column="142" selection-end-line="314" selection-end-column="142" />
               <folding>
                 <element signature="e#170#171#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
+                <element signature="e#212#213#0" expanded="true" />
                 <element signature="method#Linguagem#0;class#grafica#0" />
                 <element signature="method#menu_inicial#0;class#grafica#0" />
                 <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -103,9 +112,8 @@
                 <element signature="method#menu_características#0;class#grafica#0" />
                 <element signature="method#menu_características_sim#0;class#grafica#0" />
                 <element signature="method#menu_patrocinar#0;class#grafica#0" />
+                <element signature="method#titolo#0;class#grafica#0" />
                 <element signature="method#titolo_final#0;class#grafica#0" />
-                <element signature="method#fim#0;class#grafica#0" />
-                <element signature="method#características_caracois#0;class#grafica#0" />
                 <element signature="method#podio_3#0;class#grafica#0" />
                 <element signature="method#características_caracois_final#0;class#grafica#0" />
                 <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -142,11 +150,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/teste.fxml" />
-        <option value="$PROJECT_DIR$/src/main/caracol.java" />
         <option value="$PROJECT_DIR$/src/main/pista.java" />
-        <option value="$PROJECT_DIR$/src/main/grafica.java" />
         <option value="$PROJECT_DIR$/src/main/ranque.java" />
+        <option value="$PROJECT_DIR$/src/main/grafica.java" />
         <option value="$PROJECT_DIR$/src/main/atributos.java" />
+        <option value="$PROJECT_DIR$/src/main/caracol.java" />
         <option value="$PROJECT_DIR$/src/main/jogo.java" />
       </list>
     </option>
@@ -167,10 +175,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="660" />
-    <option name="y" value="195" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -315,12 +322,13 @@
       <workItem from="1527718538325" duration="6708000" />
       <workItem from="1527728140376" duration="2559000" />
       <workItem from="1527731121565" duration="3133000" />
-      <workItem from="1527763341729" duration="7086000" />
+      <workItem from="1527763341729" duration="7348000" />
+      <workItem from="1527819026243" duration="8076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19486000" />
+    <option name="totallyTimeSpent" value="27824000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -344,8 +352,8 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5021482" side_tool="true" weight="0.014823261" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32975295" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49785176" visible="true" weight="0.47448274" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295325" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49785176" visible="true" weight="0.066206895" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.4386207" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -355,8 +363,8 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.49931034" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.49931034" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295325" />
@@ -377,12 +385,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/caracol.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/grafica.java</url>
           <line>291</line>
           <properties />
@@ -401,7 +403,7 @@
           <option name="timeStamp" value="76" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="79" />
+      <option name="time" value="81" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -421,8 +423,6 @@
         <state relative-caret-position="204">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -439,7 +439,6 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
@@ -478,7 +477,7 @@
           <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -486,9 +485,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -510,8 +508,6 @@
         <state relative-caret-position="204">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -528,7 +524,6 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
@@ -566,7 +561,7 @@
           <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -574,9 +569,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -598,8 +592,6 @@
         <state relative-caret-position="252">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -616,7 +608,6 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
@@ -654,7 +645,7 @@
           <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -662,9 +653,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -686,8 +676,6 @@
         <state relative-caret-position="252">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -704,7 +692,6 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
@@ -742,7 +729,7 @@
           <caret line="283" column="4" selection-start-line="283" selection-start-column="4" selection-end-line="283" selection-end-column="4" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -750,9 +737,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -774,8 +760,6 @@
         <state relative-caret-position="252">
           <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -792,7 +776,6 @@
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
@@ -829,8 +812,6 @@
         <state relative-caret-position="588">
           <caret line="30" column="5" selection-start-line="23" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -844,7 +825,7 @@
           <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -852,9 +833,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -960,7 +940,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/teste.java" />
     <entry file="file://$PROJECT_DIR$/src/main/pista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
+        <state relative-caret-position="153">
           <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -972,10 +952,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/ranque.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
             <element signature="method#adicionar#0;class#ranque#0" />
             <element signature="method#listar#0;class#ranque#0" />
             <element signature="method#procurar_ranque#0;class#ranque#0" />
@@ -983,44 +961,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/atributos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="53" column="87" selection-start-line="53" selection-start-column="87" selection-end-line="53" selection-end-column="87" />
+        <state relative-caret-position="185">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#788#789#0" expanded="true" />
             <element signature="e#826#827#0" expanded="true" />
             <element signature="method#adicionar_final#0;class#atributos#0" />
-            <element signature="method#listar_final#0;class#atributos#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/caracol.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="62" column="97" selection-start-line="62" selection-start-column="80" selection-end-line="62" selection-end-column="97" />
+        <state relative-caret-position="-34">
+          <caret line="14" column="42" lean-forward="true" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#812#813#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="method#caracol#0;class#caracol#0" />
+            <element signature="method#Descansar#0;class#caracol#0" />
+            <element signature="method#guarda_posicao#0;class#caracol#0" />
+            <element signature="method#correr#0;class#caracol#0" />
+            <element signature="method#run#0;class#caracol#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/grafica.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="208" column="23" selection-start-line="208" selection-start-column="16" selection-end-line="208" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="314" column="142" selection-start-line="314" selection-start-column="142" selection-end-line="314" selection-end-column="142" />
           <folding>
             <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
             <element signature="method#Linguagem#0;class#grafica#0" />
             <element signature="method#menu_inicial#0;class#grafica#0" />
             <element signature="method#menu_participantes#0;class#grafica#0" />
@@ -1028,9 +1006,8 @@
             <element signature="method#menu_características#0;class#grafica#0" />
             <element signature="method#menu_características_sim#0;class#grafica#0" />
             <element signature="method#menu_patrocinar#0;class#grafica#0" />
+            <element signature="method#titolo#0;class#grafica#0" />
             <element signature="method#titolo_final#0;class#grafica#0" />
-            <element signature="method#fim#0;class#grafica#0" />
-            <element signature="method#características_caracois#0;class#grafica#0" />
             <element signature="method#podio_3#0;class#grafica#0" />
             <element signature="method#características_caracois_final#0;class#grafica#0" />
             <element signature="method#aposta_ganho#0;class#grafica#0" />
@@ -1043,6 +1020,16 @@
             <element signature="method#erro_Metros_catch#0;class#grafica#0" />
             <element signature="method#erro_Numero_Caracol#0;class#grafica#0" />
             <element signature="method#erro_Numero_Caracol_catch#0;class#grafica#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/jogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
