@@ -13,9 +13,12 @@ public class jogo {
         Scanner teclado = new Scanner(System.in);
         //varivel como obegeto
         pista percurso = new pista();
-        ranque ranque = new ranque();
+
         grafica menu = new grafica();
+        ranque ranque = new ranque();
+        ranque.setGrafica(menu);
         atributos atributos = new atributos();
+        atributos.setGrafica(menu);
         //menu
         menu.Linguagem();
         do {

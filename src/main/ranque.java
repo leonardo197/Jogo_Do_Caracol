@@ -4,6 +4,14 @@ public class ranque {
     grafica grafica = new grafica();
     int[] ranque = new int[150];
     int count = 0;
+    public void ranque (main.grafica grafica){
+    this.grafica=grafica;
+
+}
+
+    public void setGrafica(main.grafica grafica) {
+        this.grafica = grafica;
+    }
 
     public int adicionar(int nome) {
         if (count < (ranque.length - 1)) {

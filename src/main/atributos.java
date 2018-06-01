@@ -21,8 +21,8 @@ public class atributos {
     private int cont = 0;
     private grafica grafica = new grafica();
 
-    public atributos() {
-
+    public void setGrafica(main.grafica grafica) {
+        this.grafica = grafica;
     }
 
     public void adicionar_inicial(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento, int descanso) {

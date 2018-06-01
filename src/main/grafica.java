@@ -11,7 +11,7 @@ public class grafica {
     }
 
     public void setLinguagem(char linguagem) {
-        Linguagem = linguagem;
+        this.Linguagem = linguagem;
     }
 
     //public int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,descanso,distancia_pista,N_Participantes=0,Comprimento_pista,n_letraras;
@@ -27,7 +27,7 @@ public class grafica {
     }
 
     public void menu_inicial() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                 Bem Vindo A Grande Corrida De Caracóis                ║ ");
             System.out.println("                                   ║                                                                       ║ ");
@@ -51,7 +51,7 @@ public class grafica {
     }
 
     public void menu_participantes() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber O Numero de participantes      ║ ");
             System.out.println("                                   ║                                                                       ║ ");
@@ -66,7 +66,7 @@ public class grafica {
     }
 
     public void menu_pista() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber O Quantos Metros Deseja          ║ ");
             System.out.println("                                   ║                       Os Grandes Caracois Metros                      ║ ");
@@ -82,7 +82,7 @@ public class grafica {
     }
 
     public void menu_características() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Se Pretende                    ║ ");
             System.out.println("                                   ║             Patrocinar Nos Grandes Caracois                           ║ ");
@@ -98,7 +98,7 @@ public class grafica {
     }
 
     public void menu_características_sim() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Se Gostaria                    ║ ");
             System.out.println("                                   ║      De Ter Informações Sobre Os Grandes Caracois                     ║ ");
@@ -114,7 +114,7 @@ public class grafica {
     }
 
     public void menu_patrocinar() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Qual Dos                       ║ ");
@@ -133,7 +133,7 @@ public class grafica {
     //----------------------------atributos
 
     public void titolo() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Apresentar                      ║ ");
@@ -142,7 +142,7 @@ public class grafica {
             System.out.println();
             System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╗");
             System.out.println("                                   ║ Velocidade ║     Tempo De    ║ Quantos Metros║  Tempo Por   ║");
-            System.out.println("                                   ║            ║     Descanso    ║ Um Movimento  ║   movimento  ║");
+            System.out.println("                                   ║            ║     Descanso    ║ Para Descansar║   movimento  ║");
             System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╝");
         } else {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -153,14 +153,14 @@ public class grafica {
             System.out.println();
             System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╗");
             System.out.println("                                   ║  Velocity  ║     Time to     ║How Many Meters║   Time By    ║");
-            System.out.println("                                   ║            ║     Rest        ║  A Movement   ║   movement   ║");
+            System.out.println("                                   ║            ║     Rest        ║  To Relax     ║   movement   ║");
             System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╝");
 
         }
     }
 
     public void titolo_final() {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Apresentar                      ║ ");
@@ -169,7 +169,7 @@ public class grafica {
             System.out.println();
             System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╗");
             System.out.println("                                   ║ Velocidade ║     Tempo De    ║ Quantos Metros║  Tempo Por   ║   Total De   ║  Distanasia   ║  Média Do    ║    Tempo     ║   Posição    ║    ");
-            System.out.println("                                   ║            ║     Descanso    ║ Um Movimento  ║  movimento   ║   Movimentos ║  Percorrida   ║   Avanço     ║              ║              ║      ");
+            System.out.println("                                   ║            ║     Descanso    ║ Para Descansar║  movimento   ║   Movimentos ║  Percorrida   ║   Avanço     ║              ║              ║      ");
             System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╝");
         } else {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -180,7 +180,7 @@ public class grafica {
             System.out.println();
             System.out.println("                                   ╔═════════════╦═══════════════════╦═════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╗");
             System.out.println("                                   ║  velocity  ║     Time To     ║How many meters║   Time By    ║   Total Of   ║  Dysthanasi  ║   Average    ║     Time     ║   Position    ║    ");
-            System.out.println("                                   ║            ║       Rest      ║   A Movement  ║  Movements   ║   Movements  ║   Traveled   ║   Advance    ║              ║               ║      ");
+            System.out.println("                                   ║            ║       Rest      ║   to relax    ║  Movements   ║   Movements  ║   Traveled   ║   Advance    ║              ║               ║      ");
             System.out.println("                                   ╚═════════════╩═══════════════════╩═════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╩════════════════╝");
 
         }
@@ -194,7 +194,7 @@ public class grafica {
     }
 
     public void características_caracois(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento) {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦═════════════════╗");
             System.out.println(" O Grande Caracol De Numero " + numero_caracol + "           " + velocidade + "              " + tempo_descanso + "              " + unidades_descanso + "           " + tempo_de_movimento + "       ");
             System.out.println("                                   ╚═════════════╩═══════════════════╩════════════════╩═════════════════╝");
@@ -207,7 +207,7 @@ public class grafica {
 //-------------------------------podio
 
     public void podio_3(int i1, int i2, int i3) {
-        if (Linguagem == 'P') {
+        if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Apresentar                      ║ ");
@@ -312,32 +312,35 @@ public class grafica {
     public void erro_Numero() {
         if (Linguagem == 'P') {
             System.out.println();
-            System.out.print("                                   ║               O Numero de participantes : ");
+            System.out.print("                                   ║               O Numero de participantes: ");
         }else {
-
+            System.out.println();
+            System.out.print("                                   ║               O Number of participants: ");
         }
     }
     public void erro_Nome_catch() {
         if (Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
-            System.out.print("                                   ║               O Numero de participantes : ");
+            System.out.print("                                   ║               O Numero de participantes: ");
         }else {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             The Great Race Needs an Integer Between 3 and 150         ║       ");
+            System.out.print("                                   ║               O Number of participants: ");
         }
     }
     public void erro_Nome() {
         if (Linguagem == 'P') {
             System.out.print("                                   ║               O Seu Nome senhor(a): ");
         }else {
-
+            System.out.print("                                   ║               Your Name Mr.(Mrs.): ");
         }
     }
     public void erro_Metros() {
         if (Linguagem == 'P') {
-            System.out.print("                                   ║               O Numero De Metros : ");
+            System.out.print("                                   ║               O Numero De Metros: ");
         }else {
-
+            System.out.print("                                   ║               The number of meters: ");
         }
     }
     public void erro_Metros_catch() {
@@ -346,14 +349,16 @@ public class grafica {
             System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Que 100      ║       ");
             System.out.print("                                   ║               O Numero De Metros : ");
         }else {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             The Great Race Needs an Integer Greater Than 100          ║       ");
+            System.out.print("                                   ║               The number of meters : ");
         }
     }
     public void erro_Numero_Caracol() {
         if (Linguagem == 'P') {
-            System.out.print("                                   ║            Número Do Caracol : ");
+            System.out.print("                                   ║            Número Do Caracol: ");
         }else {
-
+            System.out.print("                                   ║            Snail Number: ");
         }
     }
     public void erro_Numero_Caracol_catch(int N_Participantes) {
@@ -362,7 +367,9 @@ public class grafica {
             System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Maior Entre 0 e " + N_Participantes);
             System.out.print("                                   ║               Número Do Caracol : ");
         }else {
-
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             The Great Race Needs a Larger Integer Between 0 and" + N_Participantes);
+            System.out.print("                                   ║               Snail Number: ");
         }
     }
 
