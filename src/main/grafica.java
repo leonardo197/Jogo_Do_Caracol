@@ -1,42 +1,49 @@
 package main;
 
-import javafx.stage.Screen;
-
-
 public class grafica {
     char Linguagem;
 
     public void grafica() {
-
     }
-
+    //---------------------linguagem
     public void setLinguagem(char linguagem) {
         this.Linguagem = linguagem;
     }
-
-    //public int numero_caracol,velocidade,tempo_descanso,unidades_descanso,tempo_de_movimento,descanso,distancia_pista,N_Participantes=0,Comprimento_pista,n_letraras;
-    //------------------------------------normal
     //----------------------menu
     public void Linguagem() {
         System.out.println("");
         System.out.println("                                                  Linguagem                               Language          ");
-        System.out.println("                                                  Português                                English          ");
-        System.out.println("                                                      P                                       E          ");
+        System.out.println("                                                  Português                               English          ");
+        System.out.println("                                                      P                                      E          ");
         System.out.println();
-        System.out.print("                                       Qual Q Língua(Which Language)?: ");
+        System.out.print("                                       Qual A Língua(Which Language)?: ");
     }
-
+    public void menu_pista() {
+        if (this.Linguagem == 'P') {
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║      A Grande Corrida Precisa De Saber Quantos Metros Deseja          ║ ");
+            System.out.println("                                   ║                   Que Os  Grandes Caracois  Corram                    ║ ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.print("                                   ║               O Numero De Metros : ");
+        } else {
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║      The Great Race Needs To Know How Many Meters Do You Want         ║ ");
+            System.out.println("                                   ║                       The Big Snails Run                              ║ ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.print("                                   ║               The Number Of Meters : ");
+        }
+    }
     public void menu_inicial() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                 Bem Vindo A Grande Corrida De Caracóis                ║ ");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║                A Grande Corrida Precisa De Alguns Dados              ║ ");
+            System.out.println("                                   ║                A Grande Corrida Precisa De Alguns Dados               ║ ");
             System.out.println("                                   ║                     Se Pretender Começar Aqui Vamos.                  ║ ");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║               A Grande Corrida Precisa De Saber O Seu Nome            ║ ");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║               O Seu Nome senhor(a): ");
+            System.out.print("                                   ║               O Seu Nome Senhor(a): ");
         } else {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                 Welcome The Great Race Of Snails                      ║ ");
@@ -49,54 +56,52 @@ public class grafica {
             System.out.print("                                   ║               Your Name Mr.(Ms): ");
         }
     }
-
+    public void menu_patrocinar() {
+        if (this.Linguagem == 'P') {
+            System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║      A Grande Corrida Precisa De Saber Qual Dos                       ║ ");
+            System.out.println("                                   ║      Nossos Grandes Caracois Pretende Patrocionar                     ║ ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.print("                                   ║            Número Do Caracol : ");
+        } else {
+            System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║      To Have Information About Big Snails                             ║ ");
+            System.out.println("                                   ║      Our Great Snails Want To Sponsor                                 ║ ");
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.print("                                   ║            Snail Number : ");
+        }
+    }
     public void menu_participantes() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber O Numero de participantes      ║ ");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║               O Numero de participantes : ");
+            System.out.print("                                   ║               O Numero De Participantes : ");
         } else {
 
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      The Great Race Needs To Know The Number Of Participants      ║ ");
+            System.out.println("                                   ║      The Great Race Needs To Know The Number Of Participants          ║ ");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.print("                                   ║               O Number of participants : ");
         }
     }
-
-    public void menu_pista() {
-        if (this.Linguagem == 'P') {
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      A Grande Corrida Precisa De Saber O Quantos Metros Deseja          ║ ");
-            System.out.println("                                   ║                       Os Grandes Caracois Metros                      ║ ");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║               O Numero De Metros : ");
-        } else {
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      The Great Race Needs To Know How Many Meters Do You Want          ║ ");
-            System.out.println("                                   ║                       The Big Snails Meters                      ║ ");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║               The number of meters : ");
-        }
-    }
-
     public void menu_caracteristicas() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
             System.out.println("                                   ║      A Grande Corrida Precisa De Saber Se Pretende                    ║ ");
-            System.out.println("                                   ║             Patrocinar Nos Grandes Caracois                           ║ ");
+            System.out.println("                                   ║             Patrocinar Os Nossos Grandes Caracois                           ║ ");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.print("                                   ║               Sim[s] Nao[n] : ");
         } else {
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║                The Great Race Needs To Know                           ║ ");
-            System.out.println("                                   ║                  Sponsor In Great Snails                              ║ ");
+            System.out.println("                                   ║                The Great Race Needs To Know If You                    ║ ");
+            System.out.println("                                   ║                    Want Sponsor a Great Snails                        ║ ");
             System.out.println("                                   ║                                                                       ║ ");
             System.out.print("                                   ║               Yes [s] No [n] : ");
         }
     }
-
     public void menu_caracteristicas_sim() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ║                                                                       ║ ");
@@ -112,26 +117,13 @@ public class grafica {
             System.out.print("                                   ║               Yes [s] No [n] : ");
         }
     }
-
-    public void menu_patrocinar() {
-        if (this.Linguagem == 'P') {
-            System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      A Grande Corrida Precisa De Saber Qual Dos                       ║ ");
-            System.out.println("                                   ║      Nossos Grandes Caracois Pretende Patrocin                        ║ ");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║            Número Do Caracol : ");
-        } else {
-            System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      To Have Information About Big Snails                             ║ ");
-            System.out.println("                                   ║      Our Great Snails Want to Sponsor                                 ║ ");
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.print("                                   ║            Snail Number : ");
-        }
-    }
     //----------------------------atributos
+    public void fim() {
 
+        System.out.println("                                   ║                                                                       ║ ");
+        System.out.println("                                   ╚════════════════════════════════════════════════════════════════════════════════╝");
+        System.out.println();
+    }
     public void titolo() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -158,7 +150,6 @@ public class grafica {
 
         }
     }
-
     public void titolo_final() {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -185,14 +176,6 @@ public class grafica {
 
         }
     }
-
-    public void fim() {
-
-        System.out.println("                                   ║                                                                       ║ ");
-        System.out.println("                                   ╚════════════════════════════════════════════════════════════════════════════════╝");
-        System.out.println();
-    }
-
     public void caracteristicas_caracois(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento) {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦═════════════════╗");
@@ -205,7 +188,6 @@ public class grafica {
         }
     }
 //-------------------------------podio
-
     public void podio_3(int i1, int i2, int i3) {
         if (this.Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
@@ -254,8 +236,7 @@ public class grafica {
             System.out.println();
             System.out.println();
         }
-    }// The Big Number Snail       "
-
+    }
     public void caracteristicas_caracois_final(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento, int total_movimentos, int distancia_percorrida, int ranque, long tenpo) {
         if (Linguagem == 'P') {
             System.out.println("                                   ╔═════════════╦═══════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦════════════════╦═════════════════╗");
@@ -270,13 +251,12 @@ public class grafica {
 
         }
     }
-
     //----------------------------aposta
     public void aposta_ganho(int n, String nome) {
         if (Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Dizer Senhor(a): " + nome);
+            System.out.println("                                   ║      A Grande Corrida Tem O Prazer De Dizer Que o Senhor(a): " + nome);
             System.out.println("                                   ║      Realizou Sabiamente O Seu Patrocínio No Grande Caracol: " + n);
             fim();
         } else {
@@ -287,18 +267,17 @@ public class grafica {
             fim();
         }
     }
-
     public void aposta_perdeu(int n, String nome) {
         if (Linguagem == 'P') {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      A Grande Corrida Lamento De Dizer Senhor(a): " + nome);
-            System.out.println("                                   ║     Que Não Realizou Sabiamente O Seu Patrocínio No Grande Caracol: " + n);
+            System.out.println("                                   ║      A Grande Corrida Lamenta Dizer que O Senhor(a): " + nome);
+            System.out.println("                                   ║     Não Realizou Sabiamente O Seu Patrocínio No Grande Caracol: " + n);
             fim();
         } else {
             System.out.println("                                   ╔════════════════════════════════════════════════════════════════════════════════╗");
             System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║      The Great Race I am sorry to say Sir(Mrs): " + nome);
+            System.out.println("                                   ║      The Great Race I Am Sorry To Say Sir(Mrs): " + nome);
             System.out.println("                                   ║     Who Did Not Wisely Perform Your Sponsorship On The Great Snail: " + n);
             fim();
         }
@@ -307,51 +286,51 @@ public class grafica {
     public void movimento_caracol(int distancia_percorrida, int numero_caracol,int distancia_pista) {
         if (Linguagem == 'P') {
             System.out.println("                                   ║                                                                        ");
-            System.out.println("                                   ║   O Grande Caracol "+ numero_caracol +" Locomover-se "+distancia_percorrida+"m");
+            System.out.println("                                   ║   O Grande Caracol "+ numero_caracol +" Locomoveu-se "+distancia_percorrida+"m");
             System.out.println("                                   ║   Ainda-lhe Falta "+(distancia_pista-distancia_percorrida)+"m Num Total De "+distancia_pista+"m");
         } else {
             System.out.println("                                   ║                                                                        ");
-            System.out.println("                                   ║   The Great Snail "+ numero_caracol +" move around "+distancia_percorrida+"m");
-            System.out.println("                                   ║   Still Missing "+(distancia_pista-distancia_percorrida)+"m In a total of "+distancia_pista+"m");
+            System.out.println("                                   ║   The Great Snail "+ numero_caracol +" Move Around "+distancia_percorrida+"m");
+            System.out.println("                                   ║   Still Missing "+(distancia_pista-distancia_percorrida)+"m In A Total Of "+distancia_pista+"m");
         }
     }
     ///-------------erros
-    public void erro_Linguagem() {
-            System.out.println();
-            System.out.print("                                       Qual Q Língua(Which Language)?: ");
+    public void erro_Nome() {
+        if (Linguagem == 'P') {
+            System.out.print("                                   ║               O Seu Nome Senhor(a): ");
+        }else {
+            System.out.print("                                   ║               Your Name Mr.(Mrs.): ");
+        }
     }
     public void erro_Numero() {
         if (Linguagem == 'P') {
             System.out.println();
-            System.out.print("                                   ║               O Numero de participantes: ");
+            System.out.print("                                   ║               O Numero Ee Participantes: ");
         }else {
             System.out.println();
-            System.out.print("                                   ║               O Number of participants: ");
-        }
-    }
-    public void erro_Nome_catch() {
-        if (Linguagem == 'P') {
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
-            System.out.print("                                   ║               O Numero de participantes: ");
-        }else {
-            System.out.println("                                   ║                                                                       ║ ");
-            System.out.println("                                   ║             The Great Race Needs an Integer Between 3 and 150         ║       ");
-            System.out.print("                                   ║               O Number of participants: ");
-        }
-    }
-    public void erro_Nome() {
-        if (Linguagem == 'P') {
-            System.out.print("                                   ║               O Seu Nome senhor(a): ");
-        }else {
-            System.out.print("                                   ║               Your Name Mr.(Mrs.): ");
+            System.out.print("                                   ║               O Number Of Participants: ");
         }
     }
     public void erro_Metros() {
         if (Linguagem == 'P') {
             System.out.print("                                   ║               O Numero De Metros: ");
         }else {
-            System.out.print("                                   ║               The number of meters: ");
+            System.out.print("                                   ║               The Number Of Meters: ");
+        }
+    }
+    public void erro_Linguagem() {
+        System.out.println();
+        System.out.print("                                       Qual Q Língua(Which Language)?: ");
+    }
+    public void erro_Nome_catch() {
+        if (Linguagem == 'P') {
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             A Grande Corrida Precisa De Um Inteiro Entre 3 E 150      ║       ");
+            System.out.print("                                   ║               O Numero De participantes: ");
+        }else {
+            System.out.println("                                   ║                                                                       ║ ");
+            System.out.println("                                   ║             The Great Race Needs an Integer Between 3 and 150         ║       ");
+            System.out.print("                                   ║               O Number Of participants: ");
         }
     }
     public void erro_Metros_catch() {

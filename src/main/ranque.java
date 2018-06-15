@@ -1,13 +1,9 @@
 package main;
 
 public class ranque {
-    grafica grafica = new grafica();
-    int[] ranque = new int[150];
+    private grafica grafica = new grafica();
+    private int[] ranque = new int[150];
     int count = 0;
-    public void ranque (main.grafica grafica){
-    this.grafica=grafica;
-
-}
 
     public void setGrafica(main.grafica grafica) {
         this.grafica = grafica;

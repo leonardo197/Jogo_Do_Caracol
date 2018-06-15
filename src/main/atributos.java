@@ -5,9 +5,8 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class atributos {
     private int index = 150;
-
-    private long[] tenpo = new long[index];
     private int[] ranque = new int[index];
+    private long[] tenpo = new long[index];
     private int[] descanso = new int[index];
     private int[] velocidade = new int[index];
     private int[] tempo_descanso = new int[index];
@@ -27,7 +26,6 @@ public class atributos {
 
     public void adicionar_inicial(int numero_caracol, int velocidade, int tempo_descanso, int unidades_descanso, int tempo_de_movimento, int descanso) {
         queueLock.lock();
-
         this.descanso[numero_caracol] = descanso;
         this.velocidade[numero_caracol] = velocidade;
         this.tempo_descanso[numero_caracol] = tempo_descanso;

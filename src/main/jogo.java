@@ -3,7 +3,6 @@ package main;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-
 public class jogo {
 
     public static void main(String[] args) {
@@ -13,7 +12,6 @@ public class jogo {
         Scanner teclado = new Scanner(System.in);
         //varivel como obegeto
         pista percurso = new pista();
-
         grafica menu = new grafica();
         ranque ranque = new ranque();
         ranque.setGrafica(menu);
@@ -34,7 +32,6 @@ public class jogo {
                 }
         } while ( Linguagem != 'P'&& Linguagem != 'p'&& Linguagem != 'e'&&  Linguagem != 'E');
         menu.setLinguagem(Linguagem);
-
 ///------------------------otilisador
         menu.menu_inicial();
         while (Nome == null) {
@@ -70,12 +67,8 @@ public class jogo {
             }
         } while (Comprimento_pista < 100);
         percurso.setComprimento_pista(Comprimento_pista);//adisiona o Comprimento pista
-
-
         ///-----------------------enisialisacao dos objetos
         Thread thread[] = new Thread[N_Participantes];
-        // caracol caracols[] = new caracol[N_Participantes];
-
         //---------------------------apostar
         menu.menu_caracteristicas();
         for (int i = 0; i < N_Participantes; i++) {
@@ -112,8 +105,6 @@ public class jogo {
         } else {
             menu.fim();
         }
-
-
         for (int i = 0; i < N_Participantes; i++) {
             thread[i].start();
         }
@@ -124,10 +115,8 @@ public class jogo {
             } catch (InterruptedException ex) {
             }
         }
-
         ranque.listar_3();
         atributos.listar_final();
-        //ranque.listar();
         if (Aposta >= 0) {
             if (ranque.listar_1() == Aposta) {
                 menu.aposta_ganho(Aposta, Nome);
@@ -137,5 +126,4 @@ public class jogo {
             }
         }
     }
-
 }

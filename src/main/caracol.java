@@ -17,18 +17,13 @@ class caracol extends Thread {
     private ranque ranque = new ranque();
     private atributos atributos = new atributos();
     grafica grafica =new grafica();
-
     //------------get/set
-
     public int getTempo_movimento() {
         return tempo_de_movimento;
     }
-
     public int getVelocidade() {
         return velocidade;
     }
-
-
     public caracol(pista Comprimento_pista, int numero_caracol, ranque ranque, atributos atributos,grafica menu) {
         this.grafica= menu;
         this.ranque = ranque;
@@ -42,14 +37,10 @@ class caracol extends Thread {
         atributos.adicionar_inicial(numero_caracol, velocidade, tempo_descanso, unidades_descanso, tempo_de_movimento, descanso);
     }
     //------------------------cod
-
-
     public void movimento() {
-
         this.distancia_percorrida += gerador.nextInt(getVelocidade() + 1);
         this.total_movimentos++;
     }
-
     public void Descansar(int descanso) {
         try {
             new Thread().sleep(descanso);
@@ -58,13 +49,11 @@ class caracol extends Thread {
 
         }
     }
-
     public void guarda_posicao() {
         synchronized (ranque) {
             this.r = ranque.adicionar(this.numero_caracol);
         }
     }
-
     public void correr() {
         queueLock.lock();
         while (this.distancia_pista > this.distancia_percorrida) {
@@ -87,11 +76,9 @@ class caracol extends Thread {
         queueLock.unlock();
         //ranque.listar();
     }
-
     public void run() {
         tempoInicial = System.currentTimeMillis();
         System.out.println("caracol numero " + Thread.currentThread().getName() + " esta pronto para começar");
         correr();
     }
-
 }
